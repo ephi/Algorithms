@@ -19,8 +19,8 @@ e.x: if P = { 10, 20 , 30 } -> m1 is of size 10 X 20, m2 is of size 20 X 30 ther
        which expressed in the dimenssion array where dim(A1) = p[i] X p[k+1], dim(A2) = p[k+1] X p[j+1]
        therefore the number of operations is indeed: p[i] * p[k+1] * p[j+1].
   2) this problem has overlapping subproblems: because of this fact calculating mc(i,j) will require to calculate the solution to all sub problems in reapting manner.
-  because of 2) an attempt to directly implement the recursive solution displayed in 1) will result in an exponential run time complexiy.
-  using DP paradigm the problem is solved with run time complexiy O(n^3) and space complexit of O(n^2).
+  because of 2) an attempt to directly implement the recursive solution displayed in 1) will result in an exponential run time complexity.
+  using DP paradigm the problem is solved with run time complexity O(n^3) and space complexity of O(n^2).
 */
 int sol(int p[MAX_SIZE],int n){
     int mc[MAX_SIZE][MAX_SIZE];
