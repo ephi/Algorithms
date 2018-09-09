@@ -17,8 +17,8 @@ e.x: if P = { 10, 20 , 30 } -> m1 is of size 10 X 20, m2 is of size 20 X 30 ther
        is really to find out the least number of operations for mi,mi+1,...,mk and for mk+1,mk+2,...,mj
        and then find out the number of operations to get A1*A2 where (mi * mi+1 * ... * mk)=A1  (mk+1 * ... * mj)=A2
        which expressed in the dimenssion array where dim(A1) = p[i] X p[k+1], dim(A2) = p[k+1] X p[j+1]
-       therefore the number of operations if indeed: p[i] * p[k+1] * p[j+1].
-  2) this problem has overlapping subproblems: because calculating mc(i,j) will require to calculate the solution to all sub problems in reapting manner.
+       therefore the number of operations is indeed: p[i] * p[k+1] * p[j+1].
+  2) this problem has overlapping subproblems: because of this fact calculating mc(i,j) will require to calculate the solution to all sub problems in reapting manner.
   because of 2) an attempt to directly implement the recursive solution displayed in 1) will result in an exponential run time complexiy.
   using DP paradigm the problem is solved with run time complexiy O(n^3) and space complexit of O(n^2).
 */
