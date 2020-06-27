@@ -31,7 +31,7 @@ so we need to show that |m_pos_a  - h_pos_a| <= |m_pos_b - h_pos_a| because m_po
 now we will show that max(|m_pos_a_k-1 - h_pos_b_k-1|,|m_pos_b_k-1 - h_pos_a_k-1|) <= max(|m_pos_a  - h_pos_a|,|m_pos_b -  h_pos_b|)
 this term: max(|m_pos_a_k-1 - h_pos_b_k-1|,|m_pos_b_k-1 - h_pos_a_k-1|) <= max(|m_pos_a  - h_pos_a|,|m_pos_b -  h_pos_b|) was considered in swap k-1
 so it holds by the I.H that if swapping maintained m_pos_a_k-1 < m_pos_a and h_pos_a_k-1 < h_pos_b then indeed max(|m_pos_a_k-1 - h_pos_b_k-1|,|m_pos_b_k-1 - h_pos_a_k-1|) <= max(|m_pos_a  - h_pos_a|,|m_pos_b -  h_pos_b|)
-the reset of the inequalities need to be considered in the same way. thus this claim holds true.
+the rest of the inequalities need to be considered in the same way. thus this claim holds true.
                               
 */
 #include <stdio.h>
