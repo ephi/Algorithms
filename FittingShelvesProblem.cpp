@@ -3,7 +3,7 @@
   Given a wall W with length w, and 2 types of shelves: A with length n, B with length m
   1) find the amount of A and B such that thier length will fill as much as possible from the length of W
   2) the solution will use as many as possible larger shelves (if n > m, then A should be used the most).
-  3) if 1) & 2) are contradicting prefer 1) (that is, if a better fill is found when using smaller shelves then large shelves prefer it)
+  3) if 1) & 2) are contradicting prefer 1) (that is, if a better fill is found when using smaller shelves than large shelves prefer it)
   idea: look at wall W of length w: |___________w____________| = W
   then, observe that every W can be split in 2 in the following way:
   |_______sm_space_____|___rm_space_______| = W
