@@ -13,8 +13,8 @@
         1) we remove the link to the previous N by setting the right edge of R-M to NULL
         2) N is in inorder position (since we traversed a cycle that started from N via some link that was created in some previous iteration), so we can consider N as visited, then, we progress N to point to the root of the right subtree.
   we do this while N is pointing to some not empty subtree.
-  With a small modification we track the number of vistions made and when the number is equal K, we can break the algorithm and return data(N), however, this may break the tree structure.
-  Or we update the kth smallest element with this value and allow the algorithm to conclude (this will maintain the tree structure)
+  With a small modification we track the number of vistions made and when the number is equal K, we can break the algorithm and return data(N). This may break the tree structure.
+  To maintain the tree structure we update the kth smallest element with this value and allow the algorithm to move through the entire tree (this will maintain the tree structure, because the links are deleted after a single cyclic traversal).
   Since we gave up on the stack, but created edge the complexity have changed as follows:
   Space complexity is now reduced to a constant: O(1)
   Run time complexity is now at most O(2N) (if the tree is actually a path given by left-children only) = O(N).
