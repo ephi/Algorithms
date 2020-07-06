@@ -15,7 +15,7 @@
   we do this while N is pointing to some not empty subtree.
   With a small modification we track the number of vistions made and when the number is equal K, we can break the algorithm and return data(N). This may break the tree structure.
   To maintain the tree structure we update the kth smallest element with this value and allow the algorithm to move through the entire tree (this will maintain the tree structure, because the links are deleted after a single cyclic traversal).
-  Since we gave up on the stack, but created edge the complexity have changed as follows:
+  Since we gave up on the stack, but created edge links the complexity have changed as follows:
   Space complexity is now reduced to a constant: O(1)
   Run time complexity is now at most O(2N) (if the tree is actually a path given by left-children only) = O(N).
 */
