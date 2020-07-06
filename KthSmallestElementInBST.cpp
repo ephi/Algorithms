@@ -5,7 +5,7 @@
   Complexity will be - run time complexity: O(K) <= O(N), Space complexity - the stack used for the recursion - O(K) <= O(N).
   However, space complexity can be reduced to a constant O(1) using morris traversal.
   The idea is as follows: when trying to decide for node N (=Current in the code) to either visit it or not we need to consider it's inorder position.
-  * if N is indeed at the inorder postion then at will have no left child, and thus we can consider N as visited and progress N to point to the root of the right subtree.
+  * if N is indeed at the inorder postion then it will have no left child, and thus we can consider N as visited and progress N to point to the root of the right subtree.
   * if N is NOT at the inorder postion, then it has a left-child and therefore left subtree, on the LeftSubtree(N) we must find right-most node R-M = RightMostNode(LeftSubtree(N))
     such that either the right child of R-M is either NULL or the right child of R-M is N (if the right child was N, then, N was visited before)
     * if Right child of R-M=Right(R-M) is NULL, then we will create a link to N from the right-edge of R-M - this will allow to return to previous levels of the tree, then, we progress N to point to be the root of the left subtree.
